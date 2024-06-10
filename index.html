@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 4 You</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa/all.min.css">
+    <link rel="stylesheet" href="fa/fontawesome.min.css">
+
+    <link rel="icon" type="image/png" href="imgs/icon.png">
+
+</head>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="imgs/logo.png" alt="logo" width="80px" class="logo">
+        </div>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark xmark"></i></a></li>
+            <li><a href="#offer">Offer</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <ul class="nav-links">
+            <li class="hideAsShrink"><a href="#offer">Offer</a></li>
+            <li class="hideAsShrink"><a href="#menu">Menu</a></li>
+            <li class="hideAsShrink"><a href="#about">About</a></li>
+            <li class="hideAsShrink"><a href="#contact">Contact</a></li>
+
+            <li class="nav-bar-bars" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+    <section class="banner container">
+        <div class="banner-left">
+            <img src="imgs/banner-img.png" alt="banner-img" class="banner-img">
+        </div>
+
+        <div class="banner-right">
+            <h1 class="banner-text">
+                <span class="banner-text-solid">Experience<br>the</span>
+                <span class="banner-text-outline">Difference!</span>
+            </h1>
+            <p class="banner-text-details">
+                We understand your coffee cravings! No matter how You like it, we've got You covered and start your
+                day
+                with a smile (and a delicious coffee) you can find all of that here at Menu 4 You.
+            </p>
+            <button class="banner-btn"><a href="#menu" class="banner-btn-text">View Menu</a></button>
+        </div>
+    </section>
+
+    <section class="ads-overlay">
+        <div class="ads-container">
+            <section class="ads">
+                <button id="close">&times;</button>
+                <img src="imgs/ads.png" alt="ads">
+            </section>
+        </div>
+    </section>
+
+    <div class="marquee">
+        <div class="marquee-content scroll">
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+        </div>
+
+        <div class="marquee-content scroll">
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+        </div>
+
+        <div class="marquee-content scroll">
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+            <span class="marquee-text-mattoa">Menu<span class="marquee-text-droid">4</span>You</span>
+        </div>
+    </div>
+
+    <section class="pastries">
+        <div class="pastries-left">
+            <p class="pastries-text-details">
+                "These delectable pastries are the lovechild of the croissant and the waffle, boasting the best of both
+                worlds. We use a flaky, buttery croissant dough that's cooked to crispy perfection in our waffle iron."
+            </p>
+
+            <p class="pastries-text-details-styled">The result? A delightful textural contrast of airy lightness and
+                caramelized edges, begging to
+                bedevoured.
+            </p>
+        </div>
+        <div class="pastries-right">
+            <div class="pastries-right-text">
+                <h2>Classic</h2>
+                <h2>Fruity Delights</h2>
+                <h2>Drizzled sauce</h2>
+            </div>
+            <div class="pastries-right-img">
+                <img src="imgs/waffles.png" alt="waffle-img" class="waffle-img">
+            </div>
+    </section>
+
+    <section class="offer" id="offer">
+        <h2>We offer</h2>
+
+        <div class="offer-left">
+            <picture>
+                <source media="(min-width: 768px)" srcset="imgs/frappe.png">
+                <img src="imgs/frappe-half.png" alt="offer-img" class="offer-img">
+            </picture>
+
+        </div>
+
+        <div class="offer-right">
+
+            <div class="offer-boxes">
+
+                <div class="offer-details">
+                    <h3>Happy Hour Buzz!</h3>
+                    <p>Discounted coffee and frappes to
+                        jumpstart your day or beat the
+                        afternoon slump! (10am - 2pm)
+                    </p>
+                </div>
+
+                <div class="offer-icon-1">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+            </div>
+
+            <div class="offer-boxes">
+
+                <div class="offer-details">
+                    <h3>Frappe Fridays!</h3>
+                    <p>New flavor alert every Friday!
+                        Try our exciting creations and
+                        share them with your friends!
+                    </p>
+                </div>
+
+                <div class="offer-icon-2">
+                    <i class="fa-regular fa-calendar-days"></i>
+                </div>
+            </div>
+
+            <div class="offer-boxes">
+
+                <div class="offer-details">
+                    <h3>Croffle Tuesdays BOGO</h3>
+                    <p>Buy one, get one free on all our
+                        delicious croffle flavors! (creamy
+                        strawberry, cookies and cream).
+                    </p>
+                </div>
+
+                <div class="offer-icon-3">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+            </div>
+
+            <div class="offer-boxes">
+
+                <div class="offer-details">
+                    <h3>Loyalty Perk Up!</h3>
+                    <p>Earn points with every purchase
+                        and redeem them for free drinks,
+                        treats, or merch!</p>
+                </div>
+
+                <div class="offer-icon-4">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="menu-gradient" id="menu">
+            Check our products
+        </div>
+        <div class="menu-img-container">
+            <img src="imgs/menu.png" alt="menu-img-edit-canva" class="menu-img">
+        </div>
+    </section>
+
+    <section class="about-us" id="about">
+        <div class="about-us-img">
+            <img src="imgs/about-img.png" alt="about-img" class="about-img">
+        </div>
+        <div class="about-us-text">
+            <h3>Our socials</h3>
+            <div class="about-us-socials">
+                <div class="about-us-socials-ley">
+                    <a class="social-link" href="https://www.facebook.com/johnley.borja.1">
+                        <i class="fa-brands fa-facebook fb"></i> <span class="social-text">Johnley Borja</span></a>
+                    <a class="social-link" href="https://www.instagram.com/jeyeeelss">
+                        <i class="fa-brands fa-instagram ig"></i> <span class="social-text"> jeyeeelss</span></a>
+                </div>
+
+                <div class="about-us-socials-ker">
+                    <a class="social-link" href="https://www.facebook.com/krwncrtn78">
+                        <i class="fa-brands fa-facebook fb"></i> <span class="social-text">Kerwin Cortina</span></a>
+                    <a class="social-link" href="https://www.instagram.com/keyceeeeez">
+                        <i class="fa-brands fa-instagram ig"></i> <span class="social-text"> keyceeeeez</span></a>
+                </div>
+
+                <div class="about-us-socials-jai">
+                    <a class="social-link" href="https://www.facebook.com/jairolexter07">
+                        <i class="fa-brands fa-facebook fb"></i> <span class="social-text">Jairo Ortega</span></a>
+                    <a class="social-link" href="https://www.instagram.com/defnotjaiii">
+                        <i class="fa-brands fa-instagram ig"></i> <span class="social-text"> defnotjaiii</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
+
+    <footer id="contact">
+        <div class="footer-title">
+            <h3>Contact us</h3>
+        </div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p> menu4you@businessmail.com </p>
+                <p> +63 910 123 4567 </p>
+            </div>
+
+            <div class="footer-right">
+                <!-- <div class="footer-right-logo">
+                <img src="imgs/logo.png" alt="logo" class="footer-logo">
+            </div> -->
+                <div class="contact-us-socials">
+                    <a class="social-link" href="#">
+                        <i class="fa-brands fa-facebook fb"></i></a>
+                    <a class="social-link" href="#">
+                        <i class="fa-brands fa-instagram ig"></i><span class="contact-social-text"> MENU 4
+                            YOU</span></a>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2024 MENU 4 YOU, All Rights Reserved </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-line">
+            <span class="footer-border-btm-line"> </span>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
