@@ -815,6 +815,14 @@ footer h3{
     }
 }
 
+@media screen and (min-width: 414px) {
+    .offer-img {
+        width: 10rem;
+        left: 0rem;
+        top: 7.95rem;
+    }
+}
+
 @media screen and (min-width: 428px) {
     .offer-img {
         width: 10rem;
